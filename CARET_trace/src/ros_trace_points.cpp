@@ -1082,7 +1082,9 @@ void ros_trace_rmw_take(
 }
 
 void ros_trace_rmw_publish(
-  const void * message
+  const void * rmw_publisher_handle,
+  const void * message,
+  int64_t timestamp
 )
 {
   if (trace_filter_is_rcl_publish_recorded) {
