@@ -1082,8 +1082,8 @@ void ros_trace_rmw_take(
 }
 
 void ros_trace_rmw_publish(
-  const void * rmw_publisher_handle,
   const void * message,
+  const void * rmw_publisher_handle,
   int64_t timestamp
 )
 {
